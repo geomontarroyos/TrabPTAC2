@@ -1,0 +1,15 @@
+html{
+background-image:linear-gradient(to right, #00FFFF,#F0F8FF);
+
+}
+input{
+border-radius: 10px;
+}
+button{
+border-radius: 15px;
+background-color: 	#000000;
+color: #F0F8FF;
+}
+
+
+
