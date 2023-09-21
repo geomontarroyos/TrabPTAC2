@@ -7,12 +7,14 @@ export default function ToDo() {
     const [autor, setautor] = useState("");
     const [genero, setgenero] = useState("");
     const [nomeLivro, setnomeLivro] = useState("");
+    const [id, setId] = useState(1);
   
     const salvar = (e) => {
       e.preventDefault();
       setLista([
         ...lista,
         {
+          id:id,
           autor: autor,
           genero: genero,
           nomeLivro: nomeLivro,
@@ -27,9 +29,9 @@ export default function ToDo() {
     const remover = (id) => {
       /*setLista(lista.filter((ativ) => (ativ.id !== id ? lista : null)));*/
       const auxLista = [];
-      lista.map((lista) => {
-          if (lista.id !== id) {
-              auxLista.push(lista);
+      lista.map((listaa) => {
+          if (listaa.id !== id) {
+              auxLista.push(listaa);
           }
       });
       setLista(auxLista);
